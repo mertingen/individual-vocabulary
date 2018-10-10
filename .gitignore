@@ -1,0 +1,17 @@
+
+###> symfony/webpack-encore-pack ###
+/individual-vocabulary/node_modules/
+individual-vocabulary/public/build/
+individual-vocabulary/npm-debug.log
+individual-vocabulary/yarn-error.log
+###< symfony/webpack-encore-pack ###
+
+###> symfony/framework-bundle ###
+individual-vocabulary(.env
+individual-vocabulary/public/bundles/
+individual-vocabulary/var/
+individual-vocabulary/vendor/
+###< symfony/framework-bundle ###
+
+individual-vocabulary/.idea/*
+individual-vocabulary/phpunit.xml.dist

@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Individual Vocabulary</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Bootstrap core CSS-->
+    <link href="{{ asset('build/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('build/dashboard.css') }}" rel="stylesheet">
+
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+<div id="app-dashboard">
+    <top-nav></top-nav>
+
+    <div id="wrapper">
+
+        <left-nav></left-nav>
+
+        <div id="content-wrapper">
+
+            <div class="container-fluid">
+                {% block body %}{% endblock %}
+            </div>
+
+            <!-- Sticky Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © https://mertblog.net 2018</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+    </div>
+</div>
+{% block javascripts %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mert-blog",
+  "private_key_id": "1ea7ce5041fe5bf69386d6cd2c5ffa37bbacd8d3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCRT6mY4FJoGh/l\nepTFjwfJ1DiLuVGHdrLUnnBSL++whrTy29qii21G4gJoXA2sXUILIzTN0cRaogMQ\nECF5PdtP93OPtYDrRPwUSoomfSM++bA9kIy4q8DbNFqPFSQT4mGQ54/oNeipP2CQ\nfegg1Uncojb+htFIkB1EBtVp/vMfARx1heNgVMFfJvsLIgwnVVQYnUr3EaD5j7wr\nJowCiGNoL2EKJS46d6i+YLIr4kEmTsnLt0h9rUjdZMs5FFm7rMhtwaptbqxbwk5/\nEz+SnyHP2/RDAogSJ2fRo14BMsGU19VPzsHnCnZZcyV0URY2Q+QDVkiQIc7rfRrD\n7k69GOQhAgMBAAECgf8LVB/vazhW0AfskWydJP7Wcqp15NzA/YqzniaOQcPOCgfR\nZz0vBEULYai5D3QsG+5/hR8jbKyCObSYwVPav+0j2YbeN/2fr0vNHoKRaEV3LhWE\ntzWWsCKOSbvwVmru90Hj/37t+5tH6/Ol+tWTZGLTG1JuRX8gyRt+/N672hnaMNM+\nOggmBrTI+Y4Eip4DxlYoW38GK3ptTM46F6aytEjM7XrycOqfX5tx+hMqa1K7R+AP\n75mlBB+9dtn+oswVZAC4H0Ct5aaFIh4MVn1ChBi9WkCpyu3+1QBirPhU9KAh4Nn3\nqEklfbtFWvFfJ4/dUmn7ys4btBoXGUT1Ycfky/kCgYEAw6seVbE+vrD1/o1XXlQP\nxkFbAMjTMQWzSDF4dHnqGEzpYGwxRSNzkWxp8IYGxVxvwTQ3YwpAm8dyKZ2HNE4Y\nMc2xj9VMQwyuA90yvT3wOT56JeenEQudJEU+5jjmk18IzdO4A72fo5iapkzbO4Zz\nySF8+PU0tgj9nj865fm0HrkCgYEAvh2lw6j/SguJFj1+IAKek4Sao1mK1VMqLAOK\nPpBaHAO113fydEx7iEa7LNi0nJfnSJnr6LGIOqJxuR2VKQax8azkGwEacMkI6KOF\nLBnTfRJND+QhFlYFwqEZ5T9dS4vOKyIwWyIf9mgVWpK0KpvsmV5m+k1SFaa9JTQy\nNalHfKkCgYAssRQPrJlRQugdCTmQcRDdTqYziqs6QjwN3EbQC9ydSkvv2yZxzUQj\nTijwaBx5zcA01/FirL/PFQINYU61crTyAzJwUN7HXckNVuO098W7vXp21+9/5DAz\nTaGtQgfgV0+Se65HJHOnET8Zhup4MSCXKw/5aUBt56XOFFEmoB80+QKBgQCYGAPb\nSkIiLKRZZIyYc0AF6FoGQMZu73+XgqWAc9+C9fzuCgmvvNg/J8bqk9u6Q1RGos02\ndYD016x/WglQrwiAvb4nVHSgslQsOVV6+JZXQuLfybQmuF8XW+bpng23OHuRymJB\nJkXHzXD36tG0HNXlxL5BlMYMiD5dmypn/6svMQKBgBUhg1/Ce1WJ9rVknypOXEv7\n4ISyfM4bA4takTiMYGh0ah5gk5+/xUx4YEKmxzK/S88wFHF3751cl48/f0yNl58s\nIJMYgEB3dFmvDlZZ1GvQQJDsw5/NE+ldHjvkshp3h/9OJxd/lZD3znY5zYiZWoYy\nAa0AO4yYiTo3n+ICGiOt\n-----END PRIVATE KEY-----\n",
+  "client_email": "translator@mert-blog.iam.gserviceaccount.com",
+  "client_id": "109827859942375503577",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/translator%40mert-blog.iam.gserviceaccount.com"
+}

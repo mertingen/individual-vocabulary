@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <div id="spinner-container" v-if="this.$store.state.spinLoading">
+        <moon-loader id="spinner"></moon-loader>
+    </div>
+    <router-view></router-view>
+<!--<setting></setting>--!>
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('build/manifest.js') }}"></script>
+<script src="{{ asset('build/layout.js') }}" type="text/javascript"></script>
+<script src="{{ asset('build/dashboard.js') }}" type="text/javascript"></script>
+{% endblock %}

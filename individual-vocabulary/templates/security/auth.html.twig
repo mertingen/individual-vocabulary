@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Sign In | Bootstrap Based Admin Template - Material Design</title>
+    <link rel="icon" type="image/x-icon" href="/rulechain.icon.png"/>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="{{ asset('build/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('build/auth.css') }}" rel="stylesheet">
+</head>
+
+<body class="login-page">
+<div id="app-form">
+    <router-view :disable-submit-button="true"></router-view>
+</div>
+
+<script src="{{ asset('build/manifest.js') }}" type="text/javascript"></script>
+<script src="{{ asset('build/layout.js') }}" type="text/javascript"></script>
+<script src="{{ asset('build/auth.js') }}" type="text/javascript"></script>
+</body>
+
+</html>
