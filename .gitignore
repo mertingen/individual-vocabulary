@@ -17,4 +17,4 @@ individual-vocabulary/.idea/*
 individual-vocabulary/phpunit.xml.dist
 individual-vocabulary/individual-vocabulary.iml
 
-assets/*
+assets/vocabulary-gc-project.json
