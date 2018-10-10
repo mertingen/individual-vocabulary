@@ -15,3 +15,6 @@ individual-vocabulary/vendor/
 
 individual-vocabulary/.idea/*
 individual-vocabulary/phpunit.xml.dist
+individual-vocabulary/individual-vocabulary.iml
+
+assets/vocabulary-gc-project.json
