@@ -13,6 +13,30 @@ body {
     height: 100%;
 }
 
+footer.sticky-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 90px);
+    height: 80px;
+    background-color: #e9ecef;
+}
+
+footer.fixed-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #e9ecef;
+    height: 50px;
+    width: calc(100% - 225px);
+}
+
 #spinner-container {
     position: absolute;
     top: 0;
