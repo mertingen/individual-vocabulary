@@ -1,6 +1,6 @@
 # individual-vocabulary
 
-1. Adjust configuration files by your scenerio.
+1. Adjust configuration files by your scenario.
 
 2. Enter project directory and run this command
 
