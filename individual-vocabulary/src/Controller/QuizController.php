@@ -51,10 +51,15 @@ class QuizController extends AbstractController
             ));
         }
 
+
         $translate = new TranslateClient();
         $result = $translate->translate($foreignWord, [
             'target' => (!empty($this->getUser()->getTargetLanguage())) ? $this->getUser()->getTargetLanguage() : 'en',
         ]);
+
+        $yourKnown = strtolower($yourKnown);
+        $result['text'] = strtolower($result['text']);
+
 
         similar_text($yourKnown, $result['text'], $perc);
 

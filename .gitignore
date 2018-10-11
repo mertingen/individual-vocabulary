@@ -19,3 +19,5 @@ individual-vocabulary/individual-vocabulary.iml
 individual-vocabulary/.env
 
 assets/vocabulary-gc-project.json
+
+individual-vocabulary/.idea
