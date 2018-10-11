@@ -53,8 +53,8 @@
                         'Content-type': 'application/x-www-form-urlencoded',
                     }
                 }).then(function (response) {
+                    store.commit('setSpinLoading', false);
                     if (response.data.status) {
-                        store.commit('setSpinLoading', false);
                         if (response.data.data.result) {
                             that.mean = response.data.data.mean;
                             that.styleObject.color = 'green';
@@ -74,9 +74,9 @@
                 store.commit('setSpinLoading', true);
                 axios.get('/quiz/random-word')
                     .then(response => {
+                        store.commit('setSpinLoading', false);
                         if (response.data.status) {
                             this.foreignWord = response.data.data.foreignWord;
-                            store.commit('setSpinLoading', false);
                         }
                     })
                     .catch(e => {

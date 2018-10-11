@@ -73,15 +73,19 @@
                 let formData = new FormData();
                 formData.set('language', this.selected);
                 let store = this.$store;
+                let that = this;
                 store.commit('setSpinLoading', true);
                 axios.post('/user/postSetting', formData, {
                     headers: {
                         'Content-type': 'application/x-www-form-urlencoded',
                     }
                 }).then(function (response) {
+                    store.commit('setSpinLoading', false);
                     if (response.data.status) {
                         store.commit('changeLanguage', response.data.data.targetLanguage);
-                        store.commit('setSpinLoading', false);
+                        that.$toastr.s(response.data.message);
+                    } else {
+                        that.$toastr.e(response.data.message);
                     }
                 });
             }

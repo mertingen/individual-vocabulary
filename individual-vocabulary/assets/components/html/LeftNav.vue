@@ -3,10 +3,9 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
+            <router-link to="/vocabulary/list" class="nav-link"><i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span>
-            </a>
+            </router-link>
         </li>
         <li class="nav-item">
             <router-link to="/quiz/quiz" class="nav-link"><i class="fas fa-fw fa-fighter-jet"></i>

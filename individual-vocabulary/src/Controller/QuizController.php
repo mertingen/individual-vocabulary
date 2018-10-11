@@ -93,9 +93,13 @@ class QuizController extends AbstractController
     {
         $user = $entityManager->getRepository('App:User')->findOneBy(array('id' => $this->getUser()->getId()));
         $vocabularies = $entityManager->getRepository('App:Vocabulary')->findBy(array('user' => $user));
-        $response = array(
-            'foreignWord' => $vocabularies[array_rand($vocabularies)]->getForeignWord()
-        );
+        if (!empty($vocabularies)) {
+            $response = array(
+                'foreignWord' => $vocabularies[array_rand($vocabularies)]->getForeignWord()
+            );
+        } else {
+            $response = array('foreignWord' => '');
+        }
 
         return $this->json(array(
             'status' => true,
