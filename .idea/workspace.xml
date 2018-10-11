@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84ce8a11-1e1e-40ba-bd9e-ddaa07c104eb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/individual-vocabulary/.env" afterPath="$PROJECT_DIR$/individual-vocabulary/.env" />
-      <change beforePath="$PROJECT_DIR$/individual-vocabulary/assets/components/html/LeftNav.vue" afterPath="$PROJECT_DIR$/individual-vocabulary/assets/components/html/LeftNav.vue" />
-      <change beforePath="$PROJECT_DIR$/individual-vocabulary/assets/components/quiz/Quiz.vue" afterPath="$PROJECT_DIR$/individual-vocabulary/assets/components/quiz/Quiz.vue" />
-      <change beforePath="$PROJECT_DIR$/individual-vocabulary/assets/components/user/Setting.vue" afterPath="$PROJECT_DIR$/individual-vocabulary/assets/components/user/Setting.vue" />
-      <change beforePath="$PROJECT_DIR$/individual-vocabulary/src/Controller/QuizController.php" afterPath="$PROJECT_DIR$/individual-vocabulary/src/Controller/QuizController.php" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +16,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LeftNav.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeftNav.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/individual-vocabulary/assets/components/html/LeftNav.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="315">
+              <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/individual-vocabulary/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -59,12 +75,12 @@
         <option value="$PROJECT_DIR$/individual-vocabulary/src/Controller/GoogleController.php" />
         <option value="$PROJECT_DIR$/individual-vocabulary/src/Controller/GoogleTranslateApiController.php" />
         <option value="$PROJECT_DIR$/individual-vocabulary/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/individual-vocabulary/.env" />
         <option value="$PROJECT_DIR$/individual-vocabulary/src/Controller/QuizController.php" />
         <option value="$PROJECT_DIR$/individual-vocabulary/assets/components/user/Setting.vue" />
         <option value="$PROJECT_DIR$/individual-vocabulary/assets/components/quiz/Quiz.vue" />
         <option value="$PROJECT_DIR$/individual-vocabulary/assets/components/html/LeftNav.vue" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -226,27 +242,6 @@
               <item name="vocabulary-auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="vocabulary-auto" type="462c0819:PsiDirectoryNode" />
               <item name="individual-vocabulary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vocabulary-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vocabulary-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="individual-vocabulary" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vocabulary-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vocabulary-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="individual-vocabulary" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vocabulary-auto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vocabulary-auto" type="462c0819:PsiDirectoryNode" />
-              <item name="individual-vocabulary" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -436,12 +431,12 @@
       <workItem from="1539103143233" duration="1077000" />
       <workItem from="1539164082563" duration="6494000" />
       <workItem from="1539188379860" duration="335000" />
-      <workItem from="1539188741531" duration="7732000" />
+      <workItem from="1539188741531" duration="7845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15638000" />
+    <option name="totallyTimeSpent" value="15751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1406" y="-310" width="1463" height="1093" extended-state="0" />
@@ -772,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/individual-vocabulary/config/packages/dev/web_profiler.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -824,14 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/individual-vocabulary/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -902,8 +881,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/individual-vocabulary/assets/components/html/LeftNav.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="315">
+          <caret line="21" column="47" lean-forward="false" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individual-vocabulary/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
