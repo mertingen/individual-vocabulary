@@ -14,7 +14,7 @@
             <button v-on:click="getRandomWord" type="button" class="btn btn-primary">Get</button>
         </form>
 
-        <div v-bind:style="styleObject" v-show="mean">*Translated: {{ mean }}</div>
+        <div v-bind:style="styleObject" v-if="isWrong">*Translated: {{ mean }}</div>
     </div>
        
 </template>
@@ -33,7 +33,8 @@
                 styleObject: {
                     color: 'red',
                     fontSize: '13px'
-                }
+                },
+                isWrong: false,
             }
         },
         created() {
@@ -56,8 +57,7 @@
                     store.commit('setSpinLoading', false);
                     if (response.data.status) {
                         if (response.data.data.result) {
-                            that.mean = response.data.data.mean;
-                            that.$toastr.s(response.data.message + "<br>" + that.foreignWord + ": " +response.data.data.mean);
+                            that.$toastr.s(response.data.message + "<br>" + that.foreignWord + ": " + response.data.data.mean);
                             that.foreignWord = response.data.data.randomWord.foreignWord;
                             that.yourKnown = '';
                         } else {
@@ -65,6 +65,7 @@
                             that.styleObject.color = 'red';
                             that.$toastr.e(response.data.message);
                             that.yourKnown = '';
+                            that.isWrong = true;
                         }
                     } else {
                         that.$toastr.e(response.data.message);
