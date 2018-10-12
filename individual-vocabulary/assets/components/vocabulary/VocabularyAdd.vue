@@ -41,8 +41,8 @@
                 }).then(function (response) {
                     if (response.data.status) {
                         store.commit('setSpinLoading', false);
-                        this.foreignWord = '';
-                        this.knownMean = '';
+                        that.foreignWord = '';
+                        that.knownMean = '';
                         that.$toastr.s(response.data.message);
                     } else {
                         that.$toastr.e(response.data.message);

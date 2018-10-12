@@ -57,12 +57,14 @@
                     if (response.data.status) {
                         if (response.data.data.result) {
                             that.mean = response.data.data.mean;
-                            that.styleObject.color = 'green';
-                            that.$toastr.s(response.data.message);
+                            that.$toastr.s(response.data.message + "<br>" + that.foreignWord + ": " +response.data.data.mean);
+                            that.foreignWord = response.data.data.randomWord.foreignWord;
+                            that.yourKnown = '';
                         } else {
                             that.mean = response.data.data.mean;
                             that.styleObject.color = 'red';
                             that.$toastr.e(response.data.message);
+                            that.yourKnown = '';
                         }
                     } else {
                         that.$toastr.e(response.data.message);
@@ -72,7 +74,7 @@
             getRandomWord: function () {
                 let store = this.$store;
                 store.commit('setSpinLoading', true);
-                axios.get('/quiz/random-word')
+                axios.get('/quiz/respond-random-word')
                     .then(response => {
                         store.commit('setSpinLoading', false);
                         if (response.data.status) {

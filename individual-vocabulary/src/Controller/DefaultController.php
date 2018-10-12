@@ -20,6 +20,6 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
-        return $this->redirectToRoute('setting');
+        return empty($this->getUser()->getTargetLanguage()) ? $this->redirectToRoute('setting') : $this->redirectToRoute('vocabulary-add');
     }
 }

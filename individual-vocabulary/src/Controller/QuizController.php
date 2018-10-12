@@ -39,7 +39,7 @@ class QuizController extends AbstractController
      *
      * It receives 2 variables. They are comparing each other.
      */
-    public function check(Request $request)
+    public function check(Request $request, EntityManagerInterface $entityManager)
     {
         $foreignWord = $request->request->get('foreignWord', null);
         $yourKnown = $request->request->get('yourKnown', null);
@@ -65,12 +65,14 @@ class QuizController extends AbstractController
 
         //if (soundex($result['text']) === soundex($yourKnown)) {
         if (strpos($result['text'], $yourKnown) !== false || intval($perc) > 70) {
+            $randomWord = $this->getRandomWord($entityManager);
             return $this->json(array(
                 'status' => true,
                 'message' => 'Successful!',
                 'data' => array(
                     'result' => true,
-                    'mean' => $result['text']
+                    'mean' => $result['text'],
+                    'randomWord' => $randomWord
                 )
             ));
         } else {
@@ -88,9 +90,27 @@ class QuizController extends AbstractController
     }
 
     /**
-     * @Route("/random-word", methods={"GET"}, name="quiz-random-word")
+     * @Route("/respond-random-word", methods={"GET"}, name="quiz-respond-random-word")
      * @param EntityManagerInterface $entityManager
      * @return \Symfony\Component\HttpFoundation\JsonResponse
+     *
+     * It returns the user's random word
+     */
+    public function respondRandomWord(EntityManagerInterface $entityManager)
+    {
+        return $this->json(array(
+            'status' => true,
+            'message' => '',
+            'data' => $this->getRandomWord($entityManager)
+        ));
+
+    }
+
+
+    /**
+     * @Route("/random-word", methods={"GET"}, name="quiz-random-word")
+     * @param EntityManagerInterface $entityManager
+     * @return array
      *
      * It returns the user's random word
      */
@@ -106,11 +126,7 @@ class QuizController extends AbstractController
             $response = array('foreignWord' => '');
         }
 
-        return $this->json(array(
-            'status' => true,
-            'message' => '',
-            'data' => $response
-        ));
+        return $response;
 
     }
 
