@@ -105,8 +105,7 @@ class QuizController extends AbstractController
         ));
 
     }
-
-
+    
     /**
      * @Route("/random-word", methods={"GET"}, name="quiz-random-word")
      * @param EntityManagerInterface $entityManager
